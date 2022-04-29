@@ -1,0 +1,67 @@
+<!DOCTYPE html> {% load static %}
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <title>climate</title>
+
+</head>
+
+
+<body>
+    <style>
+        body {
+            background-color: rgb(61, 10, 145);
+        }
+        
+        h1 {
+            font-size: 2rem;
+            font-style: italic;
+            line-height: 0.4;
+            letter-spacing: 1.5rem;
+            text-align: center;
+            color: rgb(19, 241, 149);
+            margin-top: 50px;
+        }
+        
+        .maindiv {
+            width: 1265px;
+            height: 600px;
+            position: center;
+            transform: translate(-50% -50%);
+            background-size: 100% 100%;
+            border: rgb(235, 8, 8);
+            box-shadow: 5px 25px 35px 35px rgb(10, 236, 161);
+            animation: slider 30s infinite linear;
+        }
+        
+        @keyframes slider {
+            0% {
+                background-image: url('{% static "images/7.jpg" %}');
+            }
+            30% {
+                background-image: url('{% static "images/8.jpg" %}');
+            }
+            50% {
+                background-image: url('{% static "images/9.jpg" %}');
+            }
+            60% {
+                background-image: url('{% static "images/67.jpg" %}');
+            }
+            80% {
+                background-image: url('{% static "images/40.jpg" %}');
+            }
+        }
+    </style>
+
+    <body>
+        <h1>slider animation</h1>
+        <div class="maindiv "></div>
+    </body>
+</body>
+
+</html>
