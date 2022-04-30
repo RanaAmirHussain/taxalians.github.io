@@ -1,0 +1,52 @@
+<!DOCTYPE html> {% load static%}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>autumn</title>
+</head>
+
+<body bgcolor="dark dark sunny">
+
+
+
+
+    <H1 class="text-center">ASSALAMUALIAKUM</H1>
+
+    <div class="container mb-3 py-4">
+        <form method="POST" action="{% url 'spring' %}">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="name">name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="enter your name">
+            </div>
+            <div class="form-group">
+                <label for="father_name">father_name</label>
+                <input type="text" class="form-control" id="father_name" name="father_name" placeholder="enter your father_name">
+            </div>
+            <div class="form-group">
+                <label for="gender">gender</label>
+                <input type="text" class="form-control" id="gender" name="gender" placeholder="enter your gender">
+            </div>
+            <div class="form-group">
+                <label for="Class">Class</label>
+                <input type="text" class="form-control" id="Class" name="Class" placeholder="enter your Class">
+            </div>
+            <div class="form-group">
+                <label for="section">section</label>
+                <input type="text" class="form-control" id="section" name="section" placeholder="enter your section">
+            </div>
+            <div class="form-group">
+                <label for="roll_no">roll_no</label>
+                <input type="text" class="form-control" id="roll_no" name="roll_no" placeholder="enter your roll_no">
+            </div>
+            <button class="btn btn-primary" type="submit">!!! SUBMITT HERE !!!</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
